@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="./Login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body id="body">
+
+    
+<form action="" id="form">
+  <center>
+    <h2 style="font-weight: bolder; font-size: xx-large; color: maroon; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-shadow: 3px 3px 4px  rgba(59, 58, 58, 0.527);">Login</h2>
+    <div id="div1">
+    
+  
+     
+    <input type="text" size="10" name="email NAME" id="email"  placeholder="Enter Your email" title="enter your email "  width="100px">
+  <br><br><br>
+    <input type="text" name="LAST NAME" id="pwd" placeholder="enter your paswword" ><br><br>
+    <button id="btn">Login</button>
+  </div>
+  </center>
+
+
+  </form>
+
+
+
+
+<Script>
+   document.getElementById("form").addEventListener("submit" ,(e)=>{
+    e.preventDefault()
+
+    let email=document.getElementById("email").value 
+  let Password=document.getElementById("pwd").value 
+ 
+ 
+  try{
+    let response= fetch(`http://localhost:8080/employeeLogin?email=${email}&pwd=${Password}`)
+    console.log(response)
+    
+    // console.log(response.json());
+    
+    response.then((res)=>{
+      console.log(res);
+      return res.json()
+    })
+    .then((data)=>{
+      console.log(data.data);
+      // localStorage.setItem("fname",data.data.firstName)
+      // localStorage.setItem("lname",data.data.lastName)
+      // localStorage.setItem("email",data.data.email)
+      // localStorage.setItem("phno",data.data.phno)
+    })
+
+    
+
+  }
+  catch(e){
+    console.log(e)
+  }
+});
+  
+</Script>
+</body>
+</html>

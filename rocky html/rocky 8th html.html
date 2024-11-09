@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my web page</title>
+    <!-- <style>
+        input{
+            background-color: aqua;
+            
+        }
+        label{
+            background-color: pink;
+        }
+        
+    </style> -->
+    
+</head>
+<body>
+    <center>
+    <fieldset style="width: 70%;">
+        <legend style="text-align: center; font-size: 30px;">Student</legend>
+    <form action="">
+        
+            <label for="fi">First Name: </label><input type="text" size="10" name="FIRST NAME" id="fi" placeholder="your name" title="enter your first name" required  >
+            <label for="la">Last Name: </label><input type="text" name="LAST NAME" id="la" placeholder="your name" ><br><br>
+            <label for="ma">Mail Adress: </label><input type="email" name="GMAIL" id="ma" placeholder="your gmail" required><br><br>
+            <input type="text" placeholder="Enter Your PAN no" pattern="[A-Z]{5,5}[0-9]{4,4}[a-z]{2,2}"><br><br>
+            <label for="pn">Phone Number: </label><input type="number" name="PHONE NUMBER" id="pn" placeholder="your ph no" required><br><br>
+            <label for="pa">Password: </label><input type="password" name="PASSWORD" id="pa" placeholder="your password" required minlength="6" maxlength="12"><br><br>
+            <label for="cpa">Corrent Password: </label><input type="password" name="CORRENT PASSWORD" id="cpa" placeholder="your Corrent password" required><br><br>
+            <label for="ag">Age: </label><input type="number" name="AGE" id="ag" min="18" max="35">
+            <label for="dob">DOB: </label><input type="date" name="DOB" id="dob" placeholder="your DOB" required><br><br>
+            <label for="">Gender: </label><label for="male">Male</label><input type="radio" name="GENDER" id="male" required checked>
+                                  <label for="female">Female</label><input type="radio" name="GENDER" id="female" required>
+                                  <label for="other">Other</label><input type="radio" name="GENDER" id="other" required><br></br>
+            <label for="">Skills: </label><label for="html">HTML</label><input type="checkbox" name="SKILLS" id="html" checked>       
+                                          <label for="java">JAVA</label><input type="checkbox" name="SKILLS" id="java" checked>                      
+                                          <label for="css">CSS</label><input type="checkbox" name="SKILLS" id="css">                      
+                                          <label for="python">PYTHON</label><input type="checkbox" name="SKILLS" id="python">                      
+                                          <label for="js">JS</label><input type="checkbox" name="SKILLS" id="js">   
+                                          <label for="ruby">RUBY</label><input type="checkbox" name="SKILLS" id="ruby">                      
+                                          <label for="sql">SQL</label><input type="checkbox" name="SKILLS" id="sql"checked> <br><br> 
+            <select name="" id="">
+            <option value="" disabled selected hidden>select your city</option>
+            <optgroup label="ODISHA">
+                      <option value="">Aska</option>
+                      <option value="" >Berhampur</option>
+                      <option value="">Bhubaneswar</option>
+                      <option value="">Cuttack</option>
+                      <option value="">Baleswar</option>
+                      <option value="">Bhadrak</option>
+          </optgroup>
+          <optgroup label="GUJURAT">
+                       <option value="">Ahmedabad</option>
+                       <option value=""> Surat</option>
+                       <option value="">Baroda</option>
+                       <option value="">Rajkot</option>
+                       <option value="">Anand</option>
+                       <option value="">Patan</option>
+          </optgroup>
+            <optgroup label="ANDRA PRADESH">                   
+                     <option value="">Vishakhapatnam</option>
+                        <option value="">Vijayawada</option>
+                        <option value="">Vijag</option>
+                        <option value="">Kakinada</option>
+                        <option value="">Guntur</option>
+           </optgroup>            
+            <optgroup label="PUNJAB">
+                         <option value="">Chandigarha</option>
+                         <option value="">Jalandhar</option>
+                         <option value="">Patiala</option>
+                         <option value="">Amritswar</option>
+                         <option value="">Mohali</option>
+          </optgroup>
+          <optgroup label="DELHI">
+                          <option value="">Jahanpanah</option>
+                          <option value="">New Delhi</option>
+                          <option value="">Tughlqabad</option>
+                          <option value="">Siri</option>
+                          <option value="">Shahjahanabad</option>
+          </optgroup>
+            <optgroup label="TAMILNADU">
+                          <option value="">	Chennai</option>
+                          <option value="">coimbatore</option>
+                          <option value="">Madurai</option>
+                          <option value="">Salem</option>
+                          <option value="">Tiruchirappalli</option>
+          </optgroup>
+            <optgroup label="TELENGANA">
+                         <option value="">Karimnagar</option>
+                         <option value="">Hyderabad</option>
+                         <option value="">Medak</option>
+                         <option value="">Warangal</option>
+                         <option value="">KHAMMAM </option>
+        </optgroup>
+            <optgroup label="BIHAR">
+                         <option value="">Patna</option>
+                         <option value="">Gaya</option>
+                         <option value="">Bhagalpur</option>
+                         <option value="">Mujaffanagar</option>
+                         <option value="">Purnima</option>
+       </optgroup>
+         <optgroup label="MAHARASTRA"> 
+                         <option value="">Mumbai</option>
+                         <option value="">Pune</option>
+                         <option value="">Nagpur</option>
+                         <option value="">Thane</option>
+                         <option value="">Nashik</option>
+         </optgroup>
+            <optgroup label="KERELA">
+                        <option value="">Kozhikode</option>
+                         <option value="">Kochi</option>
+                         <option value="">Thiruvananthapuram</option>
+                         <option value="">Kannur</option>
+                         <option value="">Kollam</option>
+        </optgroup>
+            </select>  <br><br>  
+
+
+            <input type="text" list="month" placeholder="Enter Month">
+            <datalist id="month">
+                <option value="JAN" >JAN</option>
+                <option value="FEB">FEB</option>
+                <option value="MAR">MAR</option>
+                <option value="APR">APR</option>
+                <option value="MAY">MAY</option>
+                <option value="JUN">JUN</option>
+                <option value="JUL">JUL</option>
+                <option value="AUG">AUG</option>
+                <option value="SEPT">SEPT</option>
+                <option value="OCT">OCT</option>
+                <option value="NOV">NOV</option>
+                <option value="DEC">DEC</option>
+
+
+            </datalist>
+              <br><br> 
+                        
+                                          
+            <label for="up">Upload Your Resume: </label><input type="file" name="resume" id="up">  <br><br>      
+            <label for="ct">Class Time: </label><input type="time" name="class time" id="ct"> <br><br>
+            <input type="datetime-local">    <br><br>
+            <label for="">Give Your Feedback</label><br><textarea name="" id="" cols="50" rows="10"></textarea><br><br>
+            <input type="button" value="exit">      <input type="button" value="Next">   <br><br>                           
+             <button>Send</button> <button>Clear</button>  <br><br>              
+            <input type="submit" name="SUBMIT" id="">       
+
+
+
+            
+
+
+
+        </fieldset>
+        </center>
+    </form>
+</body>
+</html>

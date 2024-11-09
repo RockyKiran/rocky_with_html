@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+<body>
+  <center>
+    <fieldset style="width: 50%;height: 500px">
+        <legend style="text-align: center; font-size: 30px;">Register</legend>
+<form action="" id="form">
+    <label for="fi">First Name: </label><input type="text" size="10" name="FIRST NAME" id="fi" placeholder="your name" title="enter your first name"   ><br><br>
+    <label for="la">Last Name: </label><input type="text" name="LAST NAME" id="la" placeholder="enter your last name" ><br><br>
+    <label for="ma">Email: </label><input type="email" name="GMAIL" id="ma" placeholder="your gmail"><br><br>
+    
+    <label for="pa">Password: </label><input type="password" name="PASSWORD" id="pa" placeholder="your password" required minlength="6" maxlength="12"><br><br>
+
+    <button>Register</button>
+    
+   
+  </form>
+
+</fieldset>
+
+</center>
+<script>
+  document.getElementById("form").addEventListener("submit" ,async(e)=>{
+    e.preventDefault()
+
+    let fname=document.getElementById("fi").value 
+  let lname=document.getElementById("la").value 
+  let email=document.getElementById("ma").value 
+  let pwd=document.getElementById("pa").value 
+
+  let customer={
+    "fName":fname,
+    "lName":lname,
+    "email":email,
+    "pwd" :pwd
+    
+  }
+  try{
+     let response=await fetch("http://localhost:8080/employeeSave",
+      {
+        method:"post",
+        headers:{
+          "content-type":"application/json"
+
+        },
+        body:JSON.stringify(customer)
+      }
+      
+    )
+    console.log(response)
+    if(response.status==201){
+      alert("Store Succesfully")
+    }
+    
+  }
+  catch(e){
+    console.log(e)
+  }
+});
+  
+ 
+
+
+
+</script>
+</body>
+</html>

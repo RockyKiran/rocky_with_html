@@ -1,0 +1,64 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+#body{
+  background-image: url("https://c0.wallpaperflare.com/preview/241/384/859/analysis-analytics-analyzing-annual.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1535px ;
+
+}
+#form{
+  position: relative;
+  left: 930px;
+  top: 50px;
+  height: 500px ;
+  width: 35%;
+  border: 2px none black;
+  padding-top: 20px;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px 5px rgba(55, 54, 54, 0.401);
+ 
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/607/154/376/pixel-art-pixels-8-bit-rock-wallpaper-preview.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover  ;
+
+
+}
+#div1{
+  border: 2px none  black;
+  width: 300px;
+  height: 300px   ;
+  padding-top: 50px;
+  box-shadow: 7px 7px 7px 7px rgba(55, 54, 54, 0.401),0px 0px 7px 7px rgba(55, 54, 54, 0.401);
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/339/179/774/digital-art-low-poly-artwork-minimalism-wallpaper-preview.jpg ");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:cover  ;
+  
+}
+#email{
+  width: 220px;
+  border: 2px groove black;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bolder;  
+}
+#pwd{
+  width: 220px;
+  border: 2px groove black;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bolder; 
+}
+#btn{
+  width: 70px;
+  border: 2px groove black;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bolder;
+  position: relative;
+  top: 30px;
+}
